@@ -63,6 +63,28 @@
   animation-delay: var(--delay);
 }
 
+/* Hint above audio button: use same font-family and animation as .title */
+.title-hint {
+  position: fixed;
+  right: 12px;
+  bottom: 72px; /* sit above the audio button */
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+  z-index: 10000;
+  text-shadow: 0 0 8px white;
+  font-size: 0.9rem;
+  pointer-events: none; /* hint shouldn't capture clicks */
+}
+
+.title-hint span {
+  opacity: 0;
+  animation: typing 0.8s ease forwards;
+  /* animation-delay set from JS */
+}
+
 a {
   text-decoration: none;
 }
