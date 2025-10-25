@@ -18,14 +18,17 @@
 
   <!-- Background music (place audio/backsound.mp3 or use fallback) -->
   <audio id="bg-audio" loop autoplay playsinline preload="auto">
-    <source src="audio/backsound.mp3" type="audio/mpeg">
+    <source src="kasihPutih.mp3" type="audio/mpeg">
     <!-- Fallback public URL if local file not present -->
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    <source src="kasihPutih.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <!-- Audio toggle button -->
-  <button id="audio-toggle" style="position:fixed; right:12px; bottom:12px; z-index:9999; padding:8px 12px; border-radius:6px; background:#ff6b6b; color:#fff; border:none; cursor:pointer;">Play Music</button>
+   <!-- Music hint (same font/animation as title) shown above the audio button -->
+   <div id="music-hint" class="title-hint" aria-hidden="false">pencet dulu musiknya</div>
+
+   <button id="audio-toggle" style="position:fixed; right:12px; bottom:12px; z-index:9999; padding:8px 12px; border-radius:6px; background:#ff6b6b; color:#fff; border:none; cursor:pointer;">Play Music</button>
 
   <!-- Flower -->
   <div class="flowers">
